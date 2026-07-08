@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 150 40% 98%;
+  --foreground: 156 25% 14%;
+  --card: 0 0% 100%;
+  --card-foreground: 156 25% 14%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 156 25% 14%;
+  --primary: 158 84% 27%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 154 33% 95%;
+  --secondary-foreground: 156 25% 14%;
+  --muted: 154 26% 94%;
+  --muted-foreground: 156 10% 42%;
+  --accent: 152 55% 90%;
+  --accent-foreground: 156 25% 14%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 154 20% 85%;
+  --input: 154 20% 85%;
+  --ring: 158 84% 27%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: hsl(var(--foreground));
+  background:
+    radial-gradient(circle at top left, rgba(16, 185, 129, 0.18), transparent 30%),
+    radial-gradient(circle at top right, rgba(16, 185, 129, 0.12), transparent 24%),
+    linear-gradient(180deg, #f7fffb 0%, #eefaf3 100%);
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.2);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  box-shadow: 0 24px 80px rgba(5, 46, 22, 0.12);
+}
